@@ -220,22 +220,86 @@
     text-align: center;
     height: 100%;
 }
+
 /* overlay card zoom in effect */
+.overlay-grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.overlay-flex-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
 .image-card {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
     margin: 20px 0px;
     position: relative;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.overLay-card::after {
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+}
+
+.overLay-card::before {
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 67px;
+    left: 63px;
+    transform: rotate(90deg);
+}
+
+.overlay-card-title::after {
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 90px;
+    right: 40px;
+}
+
+.overlay-card-title::before {
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 67px;
+    right: 65px;
+    transform: rotate(90deg);
 }
 
 .overLay-card {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: #3d6be973;
     height: 100%;
     width: 100%;
-    transform: scale(-0%);
+    transform: scale(100%);
+    z-index: 99;
 }
 
 .image-card img {
@@ -243,6 +307,22 @@
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    z-index: 9;
+}
+
+.overlay-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+    line-height: 40px;
+    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 400px) {
@@ -272,4 +352,26 @@
         margin: auto;
         position: relative;
     }
+
+    .overlay-grid-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .overlay-flex-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .image-card {
+        width: 300px;
+        height: 350px;
+        margin: 0px auto;
+        position: relative;
+    }
+
 }
