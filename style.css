@@ -5,28 +5,59 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0px auto;
 }
 
 /* common css */
-.card-icon,
-.card-title {
-    font-size: 32px;
-    color: #fff;
-    text-align: center;
-}
 
-/* addressing your concerns head-on section */
 .section-title {
     font-size: 42px;
     color: #000;
     text-transform: capitalize;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     font-weight: bold;
     text-align: center;
     padding: 30px 0px;
 }
+
+.section-title-Emphasize {
+    padding: 30px 0px 0px 0px;
+
+}
+
+.section-description {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.card-title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.card-description {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+/* addressing your concerns head-on section */
 
 .addressing-grid {
     display: grid;
@@ -38,22 +69,29 @@
     width: 300px;
     height: 300px;
     margin: auto;
-    padding: 20px;
     position: relative;
 }
 
-.card-content {
+.card-content,
+.Emphasize-card-content {
     width: 100%;
     height: 100%;
-    padding: 50px 0px;
     position: absolute;
     top: 0;
     left: 0;
     transition: transform 1s;
     transform-style: preserve-3d;
-    background: #3D6CE9;
-    color: white;
-    border-radius: 30px;
+    font-family: 'Montserrat';
+}
+
+.card-icon {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-icon img {
+    width: 100px;
+    height: 100px;
 }
 
 .card-front,
@@ -64,8 +102,13 @@
     position: absolute;
     backface-visibility: hidden;
     cursor: pointer;
-    padding: 30px 10px;
-
+    padding: 40px 20px;
+    background: #3D6CE9;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
 }
 
 .card-back {
@@ -73,7 +116,108 @@
     height: 100%;
     position: absolute;
     transform: rotateY(180deg);
+}
 
+/* add back background image start */
+/* .back-bg-image-layer {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    background-repeat: no-repeat;
+    object-fit: cover !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.back-skeptics {
+    background-image: url("../images/userIcon.svg");
+}
+
+.back-Budget {
+    background-image: url("../images/Budget.webp");
+}
+
+.back-Guarantee {
+    background-image: url("../images/Guarantee.svg");
+} */
+
+/* add back background image end */
+
+
+
+
+/* Emphasize Unique Benefits */
+
+.Emphasize-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.Emphasize-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Emphasize-card {
+    width: 505px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+
+
+.Emphasize-card-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    font-family: 'Montserrat';
+}
+
+.Emphasize-card-front,
+.Emphasize-card-back {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+    padding: 40px 20px;
+    background: #3D6CE9;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 31px -14px rgba(0, 0, 0, 0.75);
+}
+
+.Emphasize-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.Emphasize-card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 400px) {
@@ -84,9 +228,23 @@
         padding: 20px;
         position: relative;
     }
+
     .addressing-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    }
+
+    .Emphasize-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .Emphasize-card {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        position: relative;
     }
 }
