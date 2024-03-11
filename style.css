@@ -23,7 +23,6 @@
 
 .section-title-Emphasize {
     padding: 30px 0px 0px 0px;
-
 }
 
 .section-description {
@@ -93,6 +92,7 @@
 .card-icon img {
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
 
 .card-front,
@@ -239,12 +239,14 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    margin-top: 50px;
+
+
 }
 
 .service-card {
     width: 300px;
     height: 350px;
+    margin-top: 50px;
 }
 
 .image-card {
