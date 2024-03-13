@@ -282,3 +282,83 @@ document.getElementById("overlay-card-8").addEventListener("mouseleave", () => {
   card.style.borderRight = "10px solid #3D6CE9";
   CommercialServiceTitle.style.display = "flex";
 });
+document.getElementById("overlay-card-9").addEventListener("mouseenter", () => {
+  const card = document.getElementById("overlay-layer-9");
+  const CommercialServiceTitle = document.getElementById(
+    "Commercial-service-title-9"
+  );
+  card.style.transform = "scale(100%)";
+  card.style.transition = "transform 1s";
+  card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+  card.style.borderLeft = "10px solid #3D6CE9";
+  card.style.borderRight = "10px solid #3D6CE9";
+  CommercialServiceTitle.style.display = "none";
+});
+document.getElementById("overlay-card-9").addEventListener("mouseleave", () => {
+  const card = document.getElementById("overlay-layer-9");
+  const CommercialServiceTitle = document.getElementById(
+    "Commercial-service-title-9"
+  );
+  card.style.transform = "scale(-0%)";
+  card.style.transition = "transform 1s";
+  card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+  card.style.borderLeft = "10px solid #3D6CE9";
+  card.style.borderRight = "10px solid #3D6CE9";
+  CommercialServiceTitle.style.display = "flex";
+});
+document
+  .getElementById("overlay-card-10")
+  .addEventListener("mouseenter", () => {
+    const card = document.getElementById("overlay-layer-10");
+    const CommercialServiceTitle = document.getElementById(
+      "Commercial-service-title-10"
+    );
+    card.style.transform = "scale(100%)";
+    card.style.transition = "transform 1s";
+    card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+    card.style.borderLeft = "10px solid #3D6CE9";
+    card.style.borderRight = "10px solid #3D6CE9";
+    CommercialServiceTitle.style.display = "none";
+  });
+document
+  .getElementById("overlay-card-10")
+  .addEventListener("mouseleave", () => {
+    const card = document.getElementById("overlay-layer-10");
+    const CommercialServiceTitle = document.getElementById(
+      "Commercial-service-title-10"
+    );
+    card.style.transform = "scale(-0%)";
+    card.style.transition = "transform 1s";
+    card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+    card.style.borderLeft = "10px solid #3D6CE9";
+    card.style.borderRight = "10px solid #3D6CE9";
+    CommercialServiceTitle.style.display = "flex";
+  });
+document
+  .getElementById("overlay-card-11")
+  .addEventListener("mouseenter", () => {
+    const card = document.getElementById("overlay-layer-11");
+    const CommercialServiceTitle = document.getElementById(
+      "Commercial-service-title-11"
+    );
+    card.style.transform = "scale(100%)";
+    card.style.transition = "transform 1s";
+    card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+    card.style.borderLeft = "10px solid #3D6CE9";
+    card.style.borderRight = "10px solid #3D6CE9";
+    CommercialServiceTitle.style.display = "none";
+  });
+document
+  .getElementById("overlay-card-11")
+  .addEventListener("mouseleave", () => {
+    const card = document.getElementById("overlay-layer-11");
+    const CommercialServiceTitle = document.getElementById(
+      "Commercial-service-title-11"
+    );
+    card.style.transform = "scale(-0%)";
+    card.style.transition = "transform 1s";
+    card.style.clipPath = "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)";
+    card.style.borderLeft = "10px solid #3D6CE9";
+    card.style.borderRight = "10px solid #3D6CE9";
+    CommercialServiceTitle.style.display = "flex";
+  });
